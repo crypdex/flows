@@ -1,4 +1,4 @@
-<img src="http://wallet.crypdex.io/static/img/full-logo.svg" width=300 style="margin-bottom:20px;" />
+<img src="http://wallet.crypdex.io/static/img/full-logo.svg" width=250 style="margin-bottom:20px;" />
 
 # Rulebooks
 
