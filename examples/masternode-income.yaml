@@ -1,0 +1,7 @@
+# Convert masternode income to stablecoin
+trigger: 'balance > 10'
+actions:
+  - swap:
+      target: GUSD
+      address: 0x23b9320d0f0D57bdF32000083aA602e3E6c15cff
+      limit: 164.12

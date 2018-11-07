@@ -1,0 +1,13 @@
+# This contract simulates a classic TWAP or VWAP
+# that swaps a large amount of BTC for stablecoins
+# targeting an average price.
+#
+# This contract may take a while to execute
+# based on market conditions
+trigger: 'balance > 1000'
+schedule:
+  duration: 1 day
+actions:
+  - swap:
+      target: TUSD
+      address: <tusd-address>

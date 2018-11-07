@@ -1,0 +1,12 @@
+trigger: 'balance > 2000'
+schedule:
+  recurrence: month
+actions:
+  - swap:
+      target: XMR
+      address: <xmr-address>
+      amount: 10
+  - swap:
+      target: DASH
+      address: <dash-address>
+      amount: 30
