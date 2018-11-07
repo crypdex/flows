@@ -12,9 +12,9 @@ A curated collection of SmartSwaps for the Crypdex platform.
 
 - [Introduction](#introduction)
 - [Authoring](#authoring)
-- [Trigger](#trigger)
-- [Actions](#actions)
-- [Schedule](#schedule)
+  - [Trigger](#trigger)
+  - [Actions](#actions)
+  - [Schedule](#schedule)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -45,7 +45,7 @@ action:
       limit: 164.12
 ```
 
-## Trigger
+### Trigger
 
 A trigger defines the conditions that start the actions as described in the SmartSwap contract. Only a single trigger per SmartSwap contract is currently allowed.
 
@@ -53,7 +53,7 @@ The following trigger statments are supported
 
 - `balance [>,>=,<,<=,==] [float]`
 
-## Actions
+### Actions
 
 An action block defines what to do upon the satisfaction of the condition defined in the trigger.
 
@@ -67,7 +67,7 @@ The following actions are supported
   - `limit [float] (optional)` - The lower price limit acceptable for the swap
   - `amount [float] (optional)` - The amount of target asset to fill
 
-## Schedule
+### Schedule
 
 (in development)
 
