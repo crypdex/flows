@@ -1,12 +1,14 @@
-trigger: 'balance > 2000'
-schedule:
-  recurrence: month
-actions:
+# Convert Masternode Rewards
+trigger: "balance > 10"
+action:
   - swap:
-      target: XMR
-      address: <xmr-address>
-      amount: 10
+      symbol: USDC
+      address: 0x23b9...
+      percentage: 25
   - swap:
-      target: DASH
-      address: <dash-address>
-      amount: 30
+      symbol: TUSD
+      address: 0x15cff...
+      percentage: 50
+  - transfer:
+      address: XuHMg...
+      percentage: 25
