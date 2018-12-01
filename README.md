@@ -1,8 +1,10 @@
 <img src="http://wallet.crypdex.io/static/img/full-logo.svg" width=250 style="margin-bottom:0px;" />
 
-# SmartSwaps
+**Come back shortly, this repo is under development**
 
-A curated collection of SmartSwaps for the Crypdex platform.
+# Flows
+
+A curated collection of Flows for the Crypdex platform.
 
 #### Table of Contects
 
@@ -20,21 +22,21 @@ A curated collection of SmartSwaps for the Crypdex platform.
 
 ## Introduction
 
-A SmartSwap is a tiny program that directs the Crypdex platform how to perform your cryptocurrency swap. When submitted to Crypdex, each SmartSwap is bound to a persistent, asset address.
+A Flow is a tiny program that directs the Crypdex platform how to perform your cryptocurrency swap. When submitted to Crypdex, each Flow is bound to a persistent, asset address.
 
-**Simple Authoring:** SmartSwaps are written in YAML and registered with Crypdex through an API call or at the command line using the Crypdex CLI.
+**Simple Authoring:** Flows are written in YAML and registered with Crypdex through an API call or at the command line using the Crypdex CLI.
 
-**Simple Immutablility:** Just like smart contracts on the Ethereum network, SmartSwaps are immutable. Once saved they cannot be modified, though they can be disabled. This protects the owner from accidental modifications that would change the behavior of a running swap.
+
 
 ## Authoring
 
-SmartSwaps have 3 primary sections:
+Flows have 3 primary sections:
 
 - **Trigger**
 - **Actions**
 - **Schedule** (optional)
 
-SmartSwaps can be authored in YAML or JSON (coming soon)
+Flows can be authored in YAML or JSON (coming soon)
 
 ```yaml
 trigger: 'balance > 10'
@@ -47,7 +49,7 @@ action:
 
 ### Trigger
 
-A trigger defines the conditions that start the actions as described in the SmartSwap contract. Only a single trigger per SmartSwap contract is currently allowed.
+A trigger defines the conditions that start the actions as described in the Flows contract. Only a single trigger per Flows contract is currently allowed.
 
 The following trigger statments are supported
 
